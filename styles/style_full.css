@@ -1,0 +1,140 @@
+body {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  overflow: hidden; /*to get rid of scrollbar*/
+}
+
+#button1 {
+	position: absolute;
+	width: 700px;
+	height: 100px;
+	background: white;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #262626;
+	line-height: 100px; /*centers the text vertically inside the box*/
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	transition: 0.5s;
+
+
+}
+
+#button2 {
+	position: absolute;
+	width: 700px;
+	height: 100px;
+	background: white;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #262626;
+	line-height: 100px; /*centers the text vertically inside the box*/
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	transition: 0.5s;
+}
+
+#button1:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -25px;
+	width: 0px;
+	height: 100px;
+	background: transparent;
+	border: 50px solid transparent;
+	border-right: 25px solid white;
+	border-left: none;
+	box-sizing: border-box;
+}
+
+#button2:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -25px;
+	width: 0px;
+	height: 100px;
+	background: transparent;
+	border: 50px solid transparent;
+	border-right: 25px solid white;
+	border-left: none;
+	box-sizing: border-box;
+}
+
+#button1:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -25px;
+	width: 0px;
+	height: 100px;
+	background: transparent;
+	border: 50px solid transparent;
+	border-right: none;
+	border-left: 25px solid white;
+	box-sizing: border-box;
+}
+
+#button2:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -25px;
+	width: 0px;
+	height: 100px;
+	background: transparent;
+	border: 50px solid transparent;
+	border-right: none;
+	border-left: 25px solid white;
+	box-sizing: border-box;
+}
+
+#button1:hover {
+	letter-spacing: 3px;
+	color: white;
+	background: #262626;
+	transition: 1s;
+}
+
+#button1:hover:before {
+	border-right: 25px solid white;
+	transform: translate(-100px,0px);
+}
+
+#button1:hover:after {
+	border-left: 25px solid white;
+	transform: translate(100px,0px);
+}
+
+#button2:hover {
+	letter-spacing: 3px;
+	color: white;
+	background: #262626;
+}
+
+#button2:hover:before {
+	border-right: 25px solid white;
+	transform: translate(-100px,0px);
+}
+
+#button2:hover:after {
+	border-left: 25px solid red;
+	transform: rotateY(180deg);
+}
+
+
+#gameCanvas {
+  background: #dadbce;
+}

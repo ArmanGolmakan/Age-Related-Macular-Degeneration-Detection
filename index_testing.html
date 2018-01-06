@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="scripts/main_script_testing.js"></script>
+	<link rel="stylesheet" href="styles/style_testing.css"></link>
+	<title>AMD Game</title>
+</head>
+<body>
+
+	<audio id="myAudio">
+  		<source src="res/cute-cropped.mp3" type="audio/mpeg">
+	</audio>
+
+	<img id="doctor" width="0" height="0" src="res/doctor.gif" style="display: none;">
+
+	<button type="button" id="button1" onclick="init()">Start</button>
+
+	<button type="button"  onclick="increaseSpeed()" style="position: absolute; top: 0; left: 0; ">+++++</button>
+	<button type="button"  onclick="decreaseSpeed()" style="position: absolute; top: 0; right: 0; ">----</button>
+
+	<canvas id="gameCanvas" onclick="patientClicked(); playAudio()" style="display:none">Browser Not Supported!</canvas>
+	
+</body>
+</html>
